@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: #002e5b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+  .signup-btn {
+    background-color: white;
+    color: #002e5b;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+  
+  .text-content .highlight {
+    color: #ffd700; /* Gold color */
+  
+  }
+  
+  .text-content p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+  }
+  
+  .button-group button {
+    padding: 0.8rem 1.5rem;
+    margin-right: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .primary-btn {
+    background-color: #002e5b;
+    color: white;
+  }
+  
+  .secondary-btn {
+    background: none;
+    border: 1px solid #002e5b;
+    color: #002e5b;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .footer {
+    background-color: #002e5b;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-logo p {
+    font-size: small;
+    width: 18rem;
+    padding-top: 1rem;
+  }
+  .footer-logo,
+  .footer-links,
+  .social-links {
+    flex: 1;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 2px;
+  }
+  .footer-links h4 {
+   font-weight: 800;
+  }
+   
+  .footer-links ul li {
+    margin-bottom: 0.5rem;
+    padding-top: 3px;
+  }
+  .copy {
+    display: block;
+    background-color: #002e5b;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+
+   }
+  
+  .icons i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
