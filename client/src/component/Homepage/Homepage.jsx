@@ -3,6 +3,7 @@ import './Homepage.css'
 import loginImage from "../../assets/loginpage.png"; 
 import Header from './Header';
 import Footer from './Footer';
+import logo from "../../assets/logo.png"; 
 
 
 export default function Homepage() {
@@ -38,7 +39,7 @@ export default function Homepage() {
                 />
               </div>
         </main>
-        <Footer />
+        <Footer imgsrc={logo}/>
           
         </div>
       );

@@ -1,15 +1,14 @@
 import React from 'react'
 import './Homepage.css'
-import logo from "../../assets/logo.png"; 
 
-export default function Footer() {
+export default function Footer({imgsrc}) {
   return (
     <div>
 <footer className="footer bg-gray-900 text-white py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
         {/* Footer Logo Section */}
         <div className="footer-logo">
-          <img src={logo} alt="NEXUS VENTURES" className="w-32 mb-4" />
+          <img src={imgsrc} alt="NEXUS VENTURES" className="w-32 mb-4" />
           <p className="text-sm">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum,
             eligendi, voluptatibus deleniti ipsum officiis alias ex impedit.

@@ -3,8 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import Footer from "../Homepage/Footer";
 import axios from "axios";  // Import axios for API requests
 import Header from "../Homepage/Header";
+import { useDispatch } from 'react-redux';
+import {jwtDecode} from 'jwt-decode';
+import { loggings } from  "../../redux/authslice";
+import logo from "../../assets/logo.png"; 
 
 export default function Login() {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -15,14 +20,21 @@ export default function Login() {
       
           try {
             const response = await axios.post('http://localhost:3000/api/login', data);
-            console.log(response.data.token);
+            console.log("response",response.data.token);
+              const decodedToken = jwtDecode(response.data.token);
 
             alert('Login Successfully');
-            localStorage.setItem("token",response.data.token)
-            navigate('/userdash')
+            dispatch(loggings(response.data.token));
+            if(decodedToken.role == 'user'){
+              navigate('/videopage')
+            }
+            else{
+              navigate('/admindash')
+            }
+           
 
           } catch (error) {
-            alert('Failed to Login');
+            alert('Invalid Username or Password..');
           }
   };
     return (
@@ -111,7 +123,7 @@ export default function Login() {
       </div>
     </div>
 
-<Footer />
+<Footer imgsrc={logo}/>
     </div>
   );
 }

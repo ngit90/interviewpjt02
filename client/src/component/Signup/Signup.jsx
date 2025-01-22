@@ -4,6 +4,7 @@ import Footer from "../Homepage/Footer";
 import signimg from "../../assets/signup.png"; 
 import axios from "axios";  // Import axios for API requests
 import { useNavigate,Link } from "react-router-dom";
+import logo from "../../assets/logo.png"; 
 
 export default function Signup () {
     const navigate = useNavigate();
@@ -207,7 +208,7 @@ export default function Signup () {
       </div>
     </div>
 
-<Footer />
+<Footer imgsrc={logo}/>
     </div>
   );
 };
