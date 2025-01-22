@@ -3,7 +3,7 @@ import Footer from '../Homepage/Footer';
 import logo2 from "../../assets/logo2.png"; 
 import loginp from "../../assets/loginpage.png"; 
 import { useDispatch } from 'react-redux';
-import { logouts } from "../../redux/authSlice";
+import { logouts } from "../../redux/authslice";
 import { useNavigate } from 'react-router-dom';
 
 export default function Videopage() {
